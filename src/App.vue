@@ -21,7 +21,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https://api.coinlore.net/api/tickers/")
+    fetch("https://coinlore.net/api/tickers/")
       .then((response) => response.json())
       .then((data) => {
         this.currencyData = data.data.map((currency) => ({
